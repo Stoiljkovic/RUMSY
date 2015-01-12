@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.stater {
+  width: 1px;
+  height: 1px;
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+body {
+    -webkit-animation: fadeIn 1s linear 1; /* Safari & Chrome */
+    -moz-animation: fadeIn 1s linear 1; /* Firefox */
+    -o-animation: fadeIn 1s linear 1;  /* Opera */
+    animation: fadeIn 1s linear 1;
+    margin: 50px 0 !important;
+    background: transparent;
+}
+
+.glyphicon {
+  margin-right: 5px;
+}
+.gravimg {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: 3px solid #fff;
+}
+.sideinfo {
+  border-left: 1px dotted #ccc;
+  padding: 0 0 0 25px;
+}
+.sideinfo a {
+  display: block;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.sideinfo .gravatars {
+  width: 100%;
+  margin: -20% 0 0 0;
+  opacity: 0.9;
+}
+.sideinfo .gravatars:hover {
+  opacity: 1;
+}
+
+.sideinfo p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sideinfo .getgravatar {
+  margin: 40px 0 0;
+  width: 100%;
+}
+
+
+.navbar-nav>li>.dropdown-menu.loginer{
+  min-width: 320px;
+}
+.loginer .form-group {
+  width: 100%;
+}
+.loginer input[type="text"] {
+   margin: 10px 0;
+   width: 100%;
+ }
+.loginer label {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+
+}
+.loginer input[type="checkbox"] {
+  float:right;
+}
+
+.errno .alert {
+  position: fixed;
+  width: 25%;
+  top: 7%;
+  right: 20px;
+  z-index: 9999;
+}
+.inputer {
+  clear: both;
+  margin: 30px 0;
+  float: right;
+}
+label strong {
+  font-size: 130%;
+  letter-spacing: 3px;
+  color: red;
+}
+.copyright {
+  display: block;
+  font-size: 90%;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+.gimage {
+  width: 100%;
+  margin: 35px 0;
+}
+.jumbotron {
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+}
+
+.jumbotron.imager {
+  background-color: transparent;
+  opacity: 1;
+  max-height: 400px;
+  overflow: hidden;
+}
+.jumbotron.imager h1 {
+  margin-bottom: 30px;
+}
+
+img.blur {
+  -webkit-filter: blur(17px);
+  -moz-filter: blur(17px);
+  -o-filter: blur(17px);
+  -ms-filter: blur(17px);
+  filter: blur(17px);
+  position: relative;
+  margin-top: -50%;
+  opacity: 0.5;
+  width: 100%;
+  z-index: -1;
+  }
+.userlevel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.cleaner {
+  clear:both;
+  display: block;
+  height: 30px;
+}
+.langer strong {
+  text-transform: uppercase;
+}
+.media-body {
+  position: relative;
+  width: 100%;
+}
+.media-body .tools {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.media-body .tools form {
+  display: inline;
+  margin-right: 5px;
+}
+
+ul.paging {
+  margin: 0;
+  padding: 0;
+}
+ul.paging li {
+  list-style-type: none;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 20px;
+}
+ul.paging li small {
+  display: block;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+ul.simplePagerNav {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.unread h4, .unread p {
+  font-weight: bold;
+  color: maroon;
+}
+.unread span {
+  font-weight: normal;
+}
+
+
+  @media only screen and (max-width : 768px) {
+  .jumbotron.imager {
+    max-height: none;
+    background: inherit;
+  }
+  .jumbotron .blur {
+    display: none;
+    visibility: hidden;
+  }
+  .gimage {
+    margin: 10px 0;
+  }
+
+  }
