@@ -55,7 +55,6 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
 
 
 ?>
-
     <div class="row">
         <div class="col-md-4">
               <center><img src="../admin/img/redicon-logo.png" alt="" /></center>
@@ -78,18 +77,23 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                     } else {
                     $cpi = 1;
                       echo "<div class='alert alert-danger animated bounceInRight' role='alert'><span class='glyphicon glyphicon-remove'></span> <strong>PDO Enabled: NO</strong> - The script will not work. Please contact your host to enable PDO.</div>";
-                  } ?>
+                  } 
 
-                  <?php
+                  if (in_array("mysql", PDO::getAvailableDrivers())) {
+
+                    echo "<div class='alert alert-success animated bounceInRight' role='alert'><span class='glyphicon glyphicon-ok'></span> <strong>PDO MySQL driver enabled: YES</strong></div>";
+                    } else {
+                    $cpi = 1;
+                      echo "<div class='alert alert-danger animated bounceInRight' role='alert'><span class='glyphicon glyphicon-remove'></span> <strong>PDO MySQL driver enabled: NO</strong> - The script will not work. Please contact your host to enable PDO MySQL driver.</div>";
+                  }
+		  
                   if(function_exists('exec')) {
 
                     echo "<div class='alert alert-success animated bounceInRight' role='alert'><span class='glyphicon glyphicon-ok'></span> <strong>EXEC is Allowed: YES</strong></div>";
                     } else {
                     $cpi = 1;
                       echo "<div class='alert alert-danger animated bounceInRight' role='alert'><span class='glyphicon glyphicon-remove'></span> <strong>EXEC is  Allowed: NO</strong> - The INSTALL will not work. Please <a href='http://redicon.eu/?smd_process_download=1&download_id=303' target='_blank'>click here</a> to see steps for manual setup.</div>";
-                  } ?>
-
-                  <?php
+                  } 
 
                   if ($iswin !=1) {
 
@@ -114,9 +118,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                      echo "<div class='alert alert-success animated bounceInRight' role='alert'><span class='glyphicon glyphicon-ok'></span> <strong>You are on Windows Server.</strong> Please ensure that /cache and /backup folders are writeable.</div>";
                 }
 
-                ?>
-
-                          <?php if(!(isset($cpi))) { ?>
+                if(!(isset($cpi))) { ?>
                               <center><a href="write_file.php" class="btn btn-lg btn-warning pull-right">Next >>></a></center>
                           <?php } ?>
 
