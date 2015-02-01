@@ -1,7 +1,9 @@
 <?php
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 include("include/session.php");
 
-if(($_POST['hitcap'] == 1) && ($_SESSION["security"] != $_POST["security"])) {
+if(((isset($_POST['hitcap'])) && ($_POST['hitcap'] == 1)) && ($_SESSION["security"] != $_POST["security"])) {
   header("Location: ".$session->referrer."?error=1");
   die;
 }
