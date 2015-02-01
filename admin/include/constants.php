@@ -22,7 +22,7 @@ define("TBL_BANNED_IP",  "banned_ip");
 define("TBL_CONFIGURATION", "configuration");
 define("TBL_COMMENTS", "comments");
 define("TBL_MESSAGES", "messages");
-define("VERSIONCT","2015.3b");
+define("VERSIONCT","2015.4");
 define("SCRIPTAUTHOR", "REDICON");
 define("SCRIPTNAME", "RedIcon User Membership System");
 define("SHORTNAME", "RUMSY");
@@ -63,17 +63,3 @@ define("USER_TIMEOUT", 2);
 define("GUEST_TIMEOUT", 5);
 
 /** END STATIC **/
-
-/**
- * Database Constants - these constants are required
- * in order for there to be a successful connection
- * to the MySQL database. Make sure the information is
- * correct.
- */
-
-define('DB_SERVER', 'localhost');       // MySQL Server address. Usually localhost
-define('DB_USER', 'root');       // MySQL Database username
-define('DB_PASS', 'root');       // MySQL Database password
-define('DB_NAME', 'RUMSY');           // MySQL Database name
-define('PATHER', 'http://localhost/RedIcon/RUMSY');              // PATH
-?>
