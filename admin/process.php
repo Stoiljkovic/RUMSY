@@ -202,7 +202,7 @@ class Process
          /* Make sure username is in database */
          $subuser = stripslashes($subuser);
          if(strlen($subuser) < $config['min_user_chars'] || strlen($subuser) > $config['max_user_chars'] ||
-            !preg_match("/^[a-z0-9]([0-9a-z_-\s])+$/i", $subuser) ||
+            !preg_match("/^[a-z0-9]([0-9a-z])+$/i", $subuser) ||
             (!$database->usernameTaken($subuser))){
             $form->setError($field, "* Username does not exist<br>");
           }
