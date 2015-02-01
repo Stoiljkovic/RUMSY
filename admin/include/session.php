@@ -138,7 +138,7 @@ class Session
       }
       else{
          /* Check if username is not alphanumeric */
-      	 if(!preg_match("/^[a-z0-9]([0-9a-z_-\s])+$/i", $subuser)){
+      	 if(!preg_match("/^[a-z0-9]([0-9a-z])+$/i", $subuser)){
             $form->setError($field, $lang['NO_ALPHA']);
          }
       }
@@ -286,7 +286,7 @@ class Session
             $form->setError($field, $lang['USERNAME']." ".$lang['ABOVE']." ".$config['max_user_chars']." ".$lang['CHARS']);
          }
          /* Check if username is not alphanumeric */
-         else if(!preg_match("/^[a-z0-9]([0-9a-z_-\s])+$/i", $subuser)){
+         else if(!preg_match("/^[a-z0-9]([0-9a-z])+$/i", $subuser)){
             $form->setError($field, $lang['NO_ALPHA']);
          }
          /* Check if username is reserved */
@@ -403,7 +403,7 @@ class Session
            else if(strlen($subsitename) > 40) {
       	    $form->setError($field, $lang['WEB_MAX']);
            }
-           else if(!preg_match("/^[a-z0-9]([0-9a-z_-\s])+$/i", $subsitename)){      	
+           else if(!preg_match("/^[a-z0-9]([0-9a-z\s-_])+$/i", $subsitename)){      	
             $form->setError($field, $lang['WEB_ALPHA']);
         }
       }
@@ -418,7 +418,7 @@ class Session
            else if(strlen($subsitedesc) > 60) {
       	    $form->setError($field, $lang['WEB_DESC_MAX']);
            }
-           else if(!preg_match("/^[a-z0-9]([0-9a-z_.-\s])+$/i", $subsitedesc)){
+           else if(!preg_match("/^[a-z0-9]([0-9a-z\s-_])+$/i", $subsitedesc)){
 
             $form->setError($field, $lang['WEB_DESC_ALPHA']);
         }
@@ -434,7 +434,7 @@ class Session
         	else if(strlen($subemailfromname) > 60) {
       	    $form->setError($field, $lang['EML_FROM_MAX']);
             }
-            else if(!preg_match("/^[a-z0-9]([0-9a-z_.-\s])+$/i", $subemailfromname)){      	
+            else if(!preg_match("/^[a-z0-9]([0-9a-z])+$/i", $subemailfromname)){      	
             $form->setError($field, $lang['EML_FROM_ALPHA']);
          }
         }
@@ -672,7 +672,7 @@ class Session
       if($subusername){
       	/* Username error checking */
       	$field = "username";  //Use field name for userlevel
-        if(!preg_match("/^[a-z0-9]([0-9a-z_-\s])+$/i", $subusername)){      	
+        if(!preg_match("/^[a-z0-9]([0-9a-z])+$/i", $subusername)){      	
             $form->setError($field, $lang['NO_ALPHA']);
          }
          /* Check if username is reserved */

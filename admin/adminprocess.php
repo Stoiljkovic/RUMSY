@@ -242,7 +242,7 @@ class AdminProcess
          /* Make sure username is in database */
          $subuser = stripslashes($subuser);
          if(strlen($subuser) < $config['min_user_chars'] || strlen($subuser) > $config['max_user_chars'] ||
-            !preg_match("/^[a-z0-9]([0-9a-z_-\s])+$/i", $subuser) ||
+            !preg_match("/^[a-z0-9]([0-9a-z])+$/i", $subuser) ||
             (!$ban && !$database->usernameTaken($subuser))){
             $form->setError($field, $lang['NO_USER']);
          }
