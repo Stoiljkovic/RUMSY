@@ -7,7 +7,7 @@
     $url = "http://redicon.eu/version/RUMSY.txt";
     if ( $fp = @fopen($url, 'r') ) {
       $read = fgetcsv($fp);
-      fclose($fp); //always a good idea to close the file connection
+      fclose($fp);
     } else {
       $read[0] = $version;
     }
