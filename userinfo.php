@@ -12,7 +12,7 @@
     $req_user = trim($_GET['user']);
 
     if(!$req_user || strlen($req_user) == 0 ||
-       !preg_match("/^[a-z0-9]([0-9a-z_-\s])+$/i", $req_user) ||
+       !preg_match("/^[a-z0-9]([0-9a-z\s-_])+$/i", $req_user) ||
        !$database->usernameTaken($req_user)){ ?>
        <script type="text/javascript">window.location.href = "<?php echo $config['WEB_ROOT'].$config['home_page'];?>"</script><meta http-equiv="refresh" content="0; url=<?php echo $config['WEB_ROOT'].$config['home_page'];?>"/>
     <?php }
