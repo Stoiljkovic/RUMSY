@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row">
        <div class="col-sm-12">
-
+	<div class="cleaner"></div>
         <h1><?php echo $lang['REGISTER'];?></h1>
         <hr />
 
@@ -87,7 +87,7 @@ else if($config['ACCOUNT_ACTIVATION'] == 4){  ?>
 	$sql->bindParam(":actkey",$actkey);
 	$sql->execute();
     ?>
-	    <h3><?php echo $lang['THANK_YOU']." <strong>".$_SESSION['reguname']."</strong>. ".$lang['ACC_ACTIVATED'];?></h3>
+	    <h3><?php echo $lang['THANK_YOU'].". ".$lang['ACC_ACTIVATED'];?></h3>
 
     <?php
 	// some warning if not successful
