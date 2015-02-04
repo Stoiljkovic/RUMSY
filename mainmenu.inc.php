@@ -55,30 +55,7 @@ if (!defined('VERSIONCT')) {
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['LOGINREGISTER']; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu loginer" role="menu">
-
-            <li>
-
-                <form class="navbar-form" role="form" action="admin/process.php" method="POST">
-                  <div class="form-group">
-                    <input type="text" name="user" maxlength="30" value="<?php echo $form->value("user"); ?>" class="form-control" placeholder="<?php echo $lang['USERNAME']; ?>" />
-                  </div>
-                  <div class="input-group">
-                    <input type="password" name="pass" maxlength="30" value="<?php echo $form->value("pass"); ?>" placeholder="<?php echo $lang['PASSWORD']; ?>" class="form-control">
-                    <span class="input-group-btn">
-                    <input type="hidden" name="sublogin" value="1">
-                      <button class="btn btn-success" type="submit"><?php echo $lang['LOGIN']; ?></button>
-                    </span>
-                  </div>
-                  <div class="form-group">
-                    <label for="remember"><span class="glyphicon glyphicon-info-sign"></span> <?php echo $lang['REMEMBER']; ?>
-                    <input type="checkbox" name="remember" id="remember" <?php if($form->value("remember") != ""){ echo "checked"; } ?>></label>
-                  </div><br />
-
-                </form>
-
-
-
-            </li>
+            <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['LOGIN']; ?></a></li>
             <li><a href="forgotpass.php"><span class="glyphicon glyphicon-question-sign"></span> <?php echo $lang['FORGOT']; ?>?</a></li>
             <li><a href="registration.php"><span class="glyphicon glyphicon-ok-sign"></span> <?php echo $lang['REGISTER']; ?></a></li>
 
