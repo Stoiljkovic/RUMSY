@@ -1,4 +1,8 @@
 <?php
+
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+
     /* THIS FILE MUST BE INCLUDED ON TOP OF ALL PAGES THAT YOU WANT TO PROTECT,
     LIKE THIS: require_once('_engine.php'); */
     if (file_exists('install')) {
