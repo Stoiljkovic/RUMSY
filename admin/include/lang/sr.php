@@ -6,8 +6,6 @@ Language: SerbianL
 */
 
 $lang = array(
-'GRAVATAR' => 'Gravatar je profilna slika koja se na sajtovima pojavljuje uz vaše ime kada komentarišete clanke ili postujete na blogu. Gravatar <strong>NIJE OBAVEZAN</strong> da biste koristili ovaj sajt.',
-'GRAVATAR_SETUP' => 'Kliknite na sliku iznad da podesite vašu Gravatar sliku u slučaju da je već nemate.',
 'REGGED' => 'Registrovan od',
 'LOGINREGISTER' => 'Prijavljivanje ili Registracija',
 'LOGIN' => 'Prijavljivanje',
@@ -293,5 +291,6 @@ $lang = array(
 'PHONE' => 'Telefon',
 'COMMENT_OK' => 'Komentar je u redu',
 'REPLY' => 'Odgovori',
+'PASSPORT' => 'Pasos',
 );
 ?>
