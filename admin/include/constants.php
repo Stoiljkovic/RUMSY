@@ -22,7 +22,7 @@ define("TBL_BANNED_IP",  "banned_ip");
 define("TBL_CONFIGURATION", "configuration");
 define("TBL_COMMENTS", "comments");
 define("TBL_MESSAGES", "messages");
-define("VERSIONCT","2015.4");
+define("VERSIONCT","2015.5");
 define("SCRIPTAUTHOR", "REDICON");
 define("SCRIPTNAME", "RedIcon User Membership System");
 define("SHORTNAME", "RUMSY");
