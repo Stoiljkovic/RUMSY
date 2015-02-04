@@ -5,12 +5,11 @@ if (!defined('VERSIONCT')) {
 include ('admin/versioncontrol.php');
 ?>
 
-<footer><hr />
+<footer>
     <p class="copyright">
-    &copy; <?php echo date("Y"); ?> <?php echo $config['SITE_NAME'];?> - <?php echo $config['SITE_DESC'];?>. All Rights Reserved.
-    <br />
+    <span class="pull-left">&copy; <?php echo date("Y"); ?> <?php echo $config['SITE_NAME'];?> - <?php echo $config['SITE_DESC'];?>. All Rights Reserved.</span>
     <!-- DO NOT REMOVE! LICENCE REQUIREMENT! -- START -->
-    <a href="http://redicon.eu/"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><?php echo SHORTNAME; ?> (v<?php echo VERSIONCT; ?>)</span></a> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://redicon.eu" property="cc:attributionName" rel="cc:attributionURL">RedIcon</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a><br />
+    <span class="pull-right"><a href="http://redicon.eu/rumsy/" target="_blank"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><?php echo SHORTNAME; ?> v<?php echo VERSIONCT; ?></span></a> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://redicon.eu" property="cc:attributionName" rel="cc:attributionURL" target="_blank">RedIcon</a> (<a rel="license" href="http://redicon.eu/rumsy/#buynow" target="_blank">License</a>)</span>
     <!-- DO NOT REMOVE! LICENCE REQUIREMENT! -- END -->
 
     </p>
