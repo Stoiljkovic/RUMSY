@@ -115,7 +115,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
 
                 }
                 else {
-                     echo "<div class='alert alert-success animated bounceInRight' role='alert'><span class='glyphicon glyphicon-ok'></span> <strong>You are on Windows Server.</strong> Please ensure that /cache and /backup folders are writeable.</div>";
+                     echo "<div class='alert alert-success animated bounceInRight' role='alert'><span class='glyphicon glyphicon-ok'></span> <strong>You are on Windows Server.</strong> Please ensure that /cache and /backup folders are writeable. Also be advised that on some older IIS servers there is a bug '302 Error'. There is nothing we can do regarding that.</div>";
                 }
 
                 if(!(isset($cpi))) { ?>
