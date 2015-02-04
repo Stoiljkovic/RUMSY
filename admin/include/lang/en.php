@@ -6,9 +6,6 @@ Language: English
 */
 
 $lang = array(
-'GRAVATAR' => 'Gravatar is an image that follows you from site to site appearing beside your name when you do things like comment or post on a blog. Gravatar is <strong>NOT REQUIRED</strong> to use this website.',
-'GRAVATAR_SETUP' => 'Click on image above to setup your Gravatar in case you don\'t have one already.',
-'GRAVATAR_PROFILE' => 'Gravatar Profile',
 'REGGED' => 'Registered since',
 'LOGINREGISTER' => 'Login or Register',
 'LOGIN' => 'Login',
@@ -295,5 +292,6 @@ $lang = array(
 'PHONE' => 'Phone',
 'COMMENT_OK' => 'Comment is OK',
 'REPLY' => 'Reply',
+'PASSPORT' => 'Passport',
 );
 ?>
